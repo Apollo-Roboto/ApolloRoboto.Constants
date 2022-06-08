@@ -3,7 +3,7 @@
 This is a utility library containing a collection of constant numbers making them easy to use
 without the need to remember their values.
 
-These are mostly inspired from the [Mathematical constants Wikipedia Page](https://en.wikipedia.org/wiki/Mathematical_constant)
+The Math constants are mostly inspired from the [List of mathematical constants Wikipedia Page](https://en.wikipedia.org/wiki/List_of_mathematical_constants)
 
 Holding up to 10 decimals.
 
