@@ -11,8 +11,8 @@ namespace AR.Constants
 		public const double ROOT_2 = 1.41421356237309504880;
 		public const double ROOT_3 = 1.73205080756887729352;
 		public const double ROOT_5 = 2.23606797749978969640;
-		public const double GOLDEN_RATIO = 1.6180339887;
-		public const double SIVER_RATIO = 2.4142135623;
+		public const double GOLDEN_RATIO = 1.61803398874989484820;
+		public const double SIVER_RATIO = 2.41421356237309504880;
 		public const byte ZERO = 0;
 		public const int NEGATIVE_ONE = -1;
 		public const double CUBE_ROOT_2 = 1.25992104989487316476;
