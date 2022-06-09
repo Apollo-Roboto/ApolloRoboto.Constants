@@ -84,6 +84,33 @@ namespace AR.Constants
 		public const double PORTER = 1.46707807943397547289;
 		public const double LOCHS = 0.97027011439203392574;
 		public const double DEVICCI_TESSERACT = 1.00743475688427937609;
+		public const double LIEB_SQUARE_ICE = 1.53960071783900203869;
+		public const double NIVEN = 1.70521114010536776428;
+		public const double STEPHENS = 0.57595996889294543964;
+		public const double REGULAR_PAPERFOLDING_SEQUENCE = 0.85073618820186726036;
+		public const double RECIPROCAL_FIBONACCI = 3.35988566624317755317;
+		// Chvátal–Sankoff constant for the binary alphabet = 
+		public const double FEIGENBAUM_O = 4.66920160910299067185;
+		// Chaitin = 
+		public const double ROBBINS = 0.66170718226717623515;
+		public const double WEIERSTRASS = 0.47494937998792065033;
+		public const double FRANSÉN_ROBINSON = 2.80777024202851936522;
+		public const double FEIGENBAUM_A = 2.50290787509589282228;
+		public const double SECOND_DU_BOIS_REYMOND = 0.19452804946532511361;
+		public const double ERDOS_TENENBAUM_FORD = 0.86071332055934206887;
+		public const double CONWAY = 1.30357726903429639125;
+		public const double HAFNER_SARNAK_MCCURLEY = 0.35323637185499598454;
+		public const double BACKHOUSE = 1.45607494858268967139;
+		public const double VISWANATH = 1.1319882487943;
+		public const double KOMORNIK_LORETI = 1.78723165018296593301;
+		public const double EMBREE_TREFETHEN = 0.70258;
+		public const double HEATH_BROWN_MOROZ = 0.00131764115485317810;
+		public const double MRB = 0.18785964246206712024;
+		public const double PRIME = 0.41468250985111166024;
+		public const double SOMOS_QUADRATIC_RECURRENCE = 1.66168794963359412129;
+		public const double FOIAS = 1.18745235112650105459;
+		public const double LOGARITHMIC_CAPACITY_OF_THE_UNIT_DISK = 0.59017029950804811302;
+		public const double TANIGUCHI = 0.67823449191739197803;
 	}
 
 	public struct Physics
