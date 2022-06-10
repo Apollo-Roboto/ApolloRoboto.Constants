@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace AR.Constants
+namespace ApolloRoboto.Constants
 {
 	/// data from https://nssdc.gsfc.nasa.gov/planetary/factsheet/
 	/// distances are in km

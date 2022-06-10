@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace AR.Constants
+namespace ApolloRoboto.Constants
 {
 	/// from the List of mathematical constants Wikipedia Page
 	/// https://en.wikipedia.org/wiki/List_of_mathematical_constants
