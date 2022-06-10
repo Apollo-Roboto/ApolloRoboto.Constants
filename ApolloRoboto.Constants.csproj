@@ -4,17 +4,17 @@
 		<TargetFramework>netcoreapp3.1</TargetFramework>
 		<OutputType>Library</OutputType>
 
-		<AssemblyName>ApolloRoboto.Constant</AssemblyName>
-		<PackageId>ApolloRoboto.Constant</PackageId>
+		<AssemblyName>ApolloRoboto.Constants</AssemblyName>
+		<PackageId>ApolloRoboto.Constants</PackageId>
 		<Version>0.0.1</Version>
 		 
-		<PackageTitle>ApolloRoboto.Constant</PackageTitle>
-		<Title>ApolloRoboto.Constant</Title>
-		<Description>ApolloRoboto.Constant is a collection of constant numbers for .NET Core.</Description>
+		<PackageTitle>ApolloRoboto.Constants</PackageTitle>
+		<Title>ApolloRoboto.Constants</Title>
+		<Description>ApolloRoboto.Constants is a collection of constant numbers for .NET Core.</Description>
 		<Authors>Apollo-Roboto</Authors>
 		<!-- <PackageProjectUrl>https://github.com/Apollo-Roboto/ApolloRoboto.Constant</PackageProjectUrl> -->
-		<RepositoryUrl>https://github.com/Apollo-Roboto/ApolloRoboto.Constant</RepositoryUrl>
-		<PackageTags>Math;Constant;Numbers;Space;Planet;</PackageTags>
+		<RepositoryUrl>https://github.com/Apollo-Roboto/ApolloRoboto.Constants</RepositoryUrl>
+		<PackageTags>Math;Constants;Numbers;Space;Planet;</PackageTags>
 		<Copyright>Copyright © 2022 | Apollo-Roboto</Copyright>
 		<PackageLicenseFile>LICENSE</PackageLicenseFile>
 		<PackageReleaseNotes>README.md</PackageReleaseNotes>
