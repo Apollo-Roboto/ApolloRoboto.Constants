@@ -1,7 +1,7 @@
 # ApolloRoboto.Constants
 
-This is a utility library containing a collection of constant numbers making them easy to use
-without the need to remember their values.
+This is a simple utility library containing a collection of constant numbers making them easy to access and explore
+
 
 Include the using statement in your code:
 ```c#
