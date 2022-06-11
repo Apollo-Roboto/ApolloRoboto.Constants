@@ -3,8 +3,8 @@ name: .NET
 on:
   push:
     branches: [ master ]
-  pull_request:
-    branches: [ master ]
+    paths-ignore:
+      - './README.md'
 
 jobs:
   build:
@@ -23,6 +23,7 @@ jobs:
   publish:
     name: C# Publish to Nuget
     runs-on: ubuntu-latest
+    needs: [ build ]
 
     steps:
       - uses: actions/checkout@v3
