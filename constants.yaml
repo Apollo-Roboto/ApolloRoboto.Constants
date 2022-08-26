@@ -1,0 +1,650 @@
+# https://en.wikipedia.org/wiki/List_of_mathematical_constants
+Math:
+  ONE: 1
+  TWO: 2
+  ONE_HALF: 0.5
+  PI: 3.14159265358979323846
+  ROOT_2: 1.41421356237309504880
+  ROOT_3: 1.73205080756887729352
+  ROOT_5: 2.23606797749978969640
+  GOLDEN_RATIO: 1.61803398874989484820
+  SIVER_RATIO: 2.41421356237309504880
+  ZERO: 0
+  NEGATIVE_ONE: -1
+  CUBE_ROOT_2: 1.25992104989487316476
+  CUBE_ROOT_3: 1.44224957030740838232
+  TWELFTH_ROOT_2: 1.05946309435929526456
+  SUPER_GOLDEN_RATIO: 1.46557123187676802665
+  # https://en.wikipedia.org/wiki/Connective_constant
+  CONNECTIVE_HEXAGONAL: 1.84775906502257351225
+  KEPLER_BOUWKAMP: 0.11494204485329620070
+  WALLIS: 2.09455148154232659148
+  EULER_NUMBER: 2.71828182845904523536
+  LN_2: 0.69314718055994530941
+  LEMNISCATE: 2.62205755429211981046
+  EULER: 0.57721566490153286060
+  ERDOS_BORWEIN: 1.60669515241529176378
+  OMEGA: 0.56714329040978387299
+  APERY: 1.20205690315959428539
+  LAPLACE_LIMIT: 0.66274341934918158097
+  RAMANUJAN_SOLDNER: 1.45136923488338105028
+  GAUSS: 0.83462684167407318628
+  SECOND_HERMITE: 1.15470053837925152901
+  LIOUVILLE: 0.110001000000000000000001
+  FIRST_CONTINUED_FRACTION: 0.69777465796400798201
+  RAMANUJAN: 262537412640768743.999999999999250073
+  GLAISHER_KINKELIN: 1.28242712910062263687
+  CATALAN: 0.91596559417721901505
+  DOTTIE: 0.73908513321516064165
+  MEISSEL_MERTENS: 0.26149721284764278375
+  UNIVERSAL_PARABOLIC: 2.29558714939263807403
+  CAHEN: 0.64341054628833802618
+  GELFOND: 23.1406926327792690057
+  GELFOND_SCHNEIDER: 2.66514414269022518865
+  SECOND_FAVARD: 1.23370055013616982735
+  GOLDEN_ANGLE: 2.39996322972865332223
+  SIERPINSKI: 2.58498175957925321706
+  LANDAU_RAMANUJAN: 0.76422365358922066299
+  FIRST_NIELSEN_RAMANUJAN: 0.82246703342411321823
+  GIESEKING: 1.01494160640965362502
+  BERNSTEIN: 0.28016949902386913303
+  TRIBONACCI: 1.83928675521416113255
+  BRUN: 1.902160583104
+  TWIN_PRIMES: 0.66016181584686957392
+  PLASTIC: 1.32471795724474602596
+  Z_SCORE_FOR_THE_975_PERCENTILE_POINT: 1.95996398454005423552
+  PROUHET_THUE_MORSE: 0.41245403364010759778
+  GOLOMB_DICKMAN: 0.62432998854355087099
+  FELLER_TORNIER: 0.66131704946962233528
+  BASE_10_CHAMPERNOWNE: 0.12345678910111213141
+  SALEM: 1.17628081825991750654
+  KHINCHIN: 2.68545200106530644530
+  LEVY_1: 1.18656911041562545282
+  LEVY_2: 3.27582291872181115978
+  COPELAND_ERDOS: 0.23571113171923293137
+  MILLS: 1.30637788386308069046
+  GOMPERTZ: 0.59634736232319407434
+  VAN_DER_PAUW: 4.53236014182719380962
+  MAGIC_ANGLE: 0.955316618124509278163
+  ARTIN: 0.37395581361920228805
+  PORTER: 1.46707807943397547289
+  LOCHS: 0.97027011439203392574
+  DEVICCI_TESSERACT: 1.00743475688427937609
+  LIEB_SQUARE_ICE: 1.53960071783900203869
+  NIVEN: 1.70521114010536776428
+  STEPHENS: 0.57595996889294543964
+  REGULAR_PAPERFOLDING_SEQUENCE: 0.85073618820186726036
+  RECIPROCAL_FIBONACCI: 3.35988566624317755317
+  FEIGENBAUM_O: 4.66920160910299067185
+  ROBBINS: 0.66170718226717623515
+  WEIERSTRASS: 0.47494937998792065033
+  FRANSÉN_ROBINSON: 2.80777024202851936522
+  FEIGENBAUM_A: 2.50290787509589282228
+  SECOND_DU_BOIS_REYMOND: 0.19452804946532511361
+  ERDOS_TENENBAUM_FORD: 0.86071332055934206887
+  CONWAY: 1.30357726903429639125
+  HAFNER_SARNAK_MCCURLEY: 0.35323637185499598454
+  BACKHOUSE: 1.45607494858268967139
+  VISWANATH: 1.1319882487943
+  KOMORNIK_LORETI: 1.78723165018296593301
+  EMBREE_TREFETHEN: 0.70258
+  HEATH_BROWN_MOROZ: 0.00131764115485317810
+  MRB: 0.18785964246206712024
+  PRIME: 0.41468250985111166024
+  SOMOS_QUADRATIC_RECURRENCE: 1.66168794963359412129
+  FOIAS: 1.18745235112650105459
+  LOGARITHMIC_CAPACITY_OF_THE_UNIT_DISK: 0.59017029950804811302
+  TANIGUCHI: 0.67823449191739197803
+
+
+Space:
+
+  # Data from: https://nssdc.gsfc.nasa.gov/planetary/factsheet/
+  # Distance is in km
+  # Mass is in kg
+  # Gravity is in m/s^2
+  Planets:
+    Mercury:
+      DIAMETER: 4879
+      RADIUS: 2439.5
+      MASS: 0.330e24
+      GRAVITY: 3.7
+    Venus:
+      DIAMETER: 12104
+      RADIUS: 6052
+      MASS: 4.87e24
+      GRAVITY: 8.9
+    Earth:
+      DIAMETER: 12756
+      RADIUS: 6378
+      MASS: 5.97e24
+      GRAVITY: 9.8
+    Mars:
+      DIAMETER: 6792
+      RADIUS: 3396
+      MASS: 0.642e24
+      GRAVITY: 3.7
+    Jupiter:
+      DIAMETER: 142984
+      RADIUS: 71492
+      MASS: 1898e24
+      GRAVITY: 23.1
+    Saturn:
+      DIAMETER: 120536
+      RADIUS: 60268
+      MASS: 568e24
+      GRAVITY: 9.0
+    Uranus:
+      DIAMETER: 51118
+      RADIUS: 25559
+      MASS: 86.8e24
+      GRAVITY: 8.7
+    Neptune:
+      DIAMETER: 49528
+      RADIUS: 24764
+      MASS: 102e24
+      GRAVITY: 11.0
+
+  # Data from: https://en.wikipedia.org/wiki/List_of_natural_satellites
+  Moons:
+    Moon:
+      RADIUS: 1738
+      DIAMETER: 3476
+    Phobos:
+      RADIUS: 11.267
+      DIAMETER: 22.534
+    Deimos:
+      RADIUS: 6.2
+      DIAMETER: 12.4
+    Io:
+      RADIUS: 1821.6
+      DIAMETER: 3643.2
+    Europa:
+      RADIUS: 1560.8
+      DIAMETER: 3121.6
+    Ganymede:
+      RADIUS: 2634.1
+      DIAMETER: 5268.2
+    Callisto:
+      RADIUS: 2410.3
+      DIAMETER: 4820.6
+    Amalthea:
+      RADIUS: 83.5
+      DIAMETER: 167
+    Himalia:
+      RADIUS: 69.8
+      DIAMETER: 139.6
+    Elara:
+      RADIUS: 43
+      DIAMETER: 86
+    Pasiphae:
+      RADIUS: 30
+      DIAMETER: 60
+    Sinope:
+      RADIUS: 19
+      DIAMETER: 38
+    Lysithea:
+      RADIUS: 18
+      DIAMETER: 36
+    Carme:
+      RADIUS: 23
+      DIAMETER: 46
+    Ananke:
+      RADIUS: 14
+      DIAMETER: 28
+    Leda:
+      RADIUS: 10
+      DIAMETER: 20
+    Thebe:
+      RADIUS: 49.3
+      DIAMETER: 98.6
+    Adrastea:
+      RADIUS: 8.2
+      DIAMETER: 16.4
+    Metis:
+      RADIUS: 21.5
+      DIAMETER: 43
+    Callirrhoe:
+      RADIUS: 4.5
+      DIAMETER: 9
+    Themisto:
+      RADIUS: 4
+      DIAMETER: 8
+    Megaclite:
+      RADIUS: 2.7
+      DIAMETER: 5.4
+    Taygete:
+      RADIUS: 2.5
+      DIAMETER: 5
+    Chaldene:
+      RADIUS: 1.9
+      DIAMETER: 3.8
+    Harpalyke:
+      RADIUS: 2.2
+      DIAMETER: 4.4
+    Kalyke:
+      RADIUS: 2.6
+      DIAMETER: 5.2
+    Iocaste:
+      RADIUS: 2.6
+      DIAMETER: 5.2
+    Erinome:
+      RADIUS: 1.6
+      DIAMETER: 3.2
+    Isonoe:
+      RADIUS: 2
+      DIAMETER: 4
+    Praxidike:
+      RADIUS: 3.5
+      DIAMETER: 7
+    Autonoe:
+      RADIUS: 2
+      DIAMETER: 4
+    Thyone:
+      RADIUS: 2
+      DIAMETER: 4
+    Hermippe:
+      RADIUS: 2
+      DIAMETER: 4
+    Aitne:
+      RADIUS: 1.5
+      DIAMETER: 3
+    Eurydome:
+      RADIUS: 1.5
+      DIAMETER: 3
+    Euanthe:
+      RADIUS: 1.5
+      DIAMETER: 3
+    Euporie:
+      RADIUS: 1
+      DIAMETER: 2
+    Orthosie:
+      RADIUS: 1
+      DIAMETER: 2
+    Sponde:
+      RADIUS: 1
+      DIAMETER: 2
+    Kale:
+      RADIUS: 1
+      DIAMETER: 2
+    Pasithee:
+      RADIUS: 1
+      DIAMETER: 2
+    Hegemone:
+      RADIUS: 1.5
+      DIAMETER: 3
+    Mneme:
+      RADIUS: 1
+      DIAMETER: 2
+    Aoede:
+      RADIUS: 2
+      DIAMETER: 4
+    Thelxinoe:
+      RADIUS: 1
+      DIAMETER: 2
+    Arche:
+      RADIUS: 1.5
+      DIAMETER: 3
+    Kallichore:
+      RADIUS: 1
+      DIAMETER: 2
+    Helike:
+      RADIUS: 2
+      DIAMETER: 4
+    Carpo:
+      RADIUS: 1.5
+      DIAMETER: 3
+    Eukelade:
+      RADIUS: 2
+      DIAMETER: 4
+    Cyllene:
+      RADIUS: 1
+      DIAMETER: 2
+    Kore:
+      RADIUS: 1
+      DIAMETER: 2
+    Herse:
+      RADIUS: 1
+      DIAMETER: 2
+    Dia:
+      RADIUS: 2
+      DIAMETER: 4
+    Eirene:
+      RADIUS: 2
+      DIAMETER: 4
+    Philophrosyne:
+      RADIUS: 1
+      DIAMETER: 2
+    Eupheme:
+      RADIUS: 1
+      DIAMETER: 2
+    Valetudo:
+      RADIUS: 0.5
+      DIAMETER: 1
+    Pandia:
+      RADIUS: 1.5
+      DIAMETER: 3
+    Ersa:
+      RADIUS: 1.5
+      DIAMETER: 3
+    Mimas:
+      RADIUS: 198.2
+      DIAMETER: 396.4
+    Enceladus:
+      RADIUS: 252.1
+      DIAMETER: 504.2
+    Tethys:
+      RADIUS: 533.1
+      DIAMETER: 1066.2
+    Dione:
+      RADIUS: 561.4
+      DIAMETER: 1122.8
+    Rhea:
+      RADIUS: 763.8
+      DIAMETER: 1527.6
+    Titan:
+      RADIUS: 2574.73
+      DIAMETER: 5149.46
+    Hyperion:
+      RADIUS: 135
+      DIAMETER: 270
+    Iapetus:
+      RADIUS: 735.6
+      DIAMETER: 1471.2
+    Phoebe:
+      RADIUS: 106.5
+      DIAMETER: 213
+    Janus:
+      RADIUS: 89.5
+      DIAMETER: 179
+    Epimetheus:
+      RADIUS: 58.1
+      DIAMETER: 116.2
+    Helene:
+      RADIUS: 17.6
+      DIAMETER: 35.2
+    Telesto:
+      RADIUS: 12.4
+      DIAMETER: 24.8
+    Calypso:
+      RADIUS: 10.7
+      DIAMETER: 21.4
+    Atlas:
+      RADIUS: 15.1
+      DIAMETER: 30.2
+    Prometheus:
+      RADIUS: 43.1
+      DIAMETER: 86.2
+    Pandora:
+      RADIUS: 40.7
+      DIAMETER: 81.4
+    Pan:
+      RADIUS: 14.1
+      DIAMETER: 28.2
+    Ymir:
+      RADIUS: 9
+      DIAMETER: 18
+    Paaliaq:
+      RADIUS: 11
+      DIAMETER: 22
+    Tarvos:
+      RADIUS: 7.5
+      DIAMETER: 15
+    Ijiraq:
+      RADIUS: 6
+      DIAMETER: 12
+    Suttungr:
+      RADIUS: 3.5
+      DIAMETER: 7
+    Kiviuq:
+      RADIUS: 8
+      DIAMETER: 16
+    Mundilfari:
+      RADIUS: 3.5
+      DIAMETER: 7
+    Albiorix:
+      RADIUS: 16
+      DIAMETER: 32
+    Skathi:
+      RADIUS: 4
+      DIAMETER: 8
+    Erriapus:
+      RADIUS: 5
+      DIAMETER: 10
+    Siarnaq:
+      RADIUS: 20
+      DIAMETER: 40
+    Thrymr:
+      RADIUS: 3.5
+      DIAMETER: 7
+    Narvi:
+      RADIUS: 3.5
+      DIAMETER: 7
+    Methone:
+      RADIUS: 1.45
+      DIAMETER: 2.9
+    Pallene:
+      RADIUS: 2.22
+      DIAMETER: 4.44
+    Polydeuces:
+      RADIUS: 1.3
+      DIAMETER: 2.6
+    Daphnis:
+      RADIUS: 3.8
+      DIAMETER: 7.6
+    Aegir:
+      RADIUS: 3
+      DIAMETER: 6
+    Bebhionn:
+      RADIUS: 3
+      DIAMETER: 6
+    Bergelmir:
+      RADIUS: 3
+      DIAMETER: 6
+    Bestla:
+      RADIUS: 3.5
+      DIAMETER: 7
+    Farbauti:
+      RADIUS: 2.5
+      DIAMETER: 5
+    Fenrir:
+      RADIUS: 2
+      DIAMETER: 4
+    Fornjot:
+      RADIUS: 3
+      DIAMETER: 6
+    Hati:
+      RADIUS: 3
+      DIAMETER: 6
+    Hyrrokkin:
+      RADIUS: 4
+      DIAMETER: 8
+    Kari:
+      RADIUS: 3.5
+      DIAMETER: 7
+    Loge:
+      RADIUS: 3
+      DIAMETER: 6
+    Skoll:
+      RADIUS: 3
+      DIAMETER: 6
+    Surtur:
+      RADIUS: 3
+      DIAMETER: 6
+    Anthe:
+      RADIUS: 0.9
+      DIAMETER: 1.8
+    Jarnsaxa:
+      RADIUS: 3
+      DIAMETER: 6
+    Greip:
+      RADIUS: 3
+      DIAMETER: 6
+    Tarqeq:
+      RADIUS: 3.5
+      DIAMETER: 7
+    Aegaeon:
+      RADIUS: 0.33
+      DIAMETER: 0.66
+    Ariel:
+      RADIUS: 578.9
+      DIAMETER: 1157.8
+    Umbriel:
+      RADIUS: 584.7
+      DIAMETER: 1169.4
+    Titania:
+      RADIUS: 788.9
+      DIAMETER: 1577.8
+    Oberon:
+      RADIUS: 761.4
+      DIAMETER: 1522.8
+    Miranda:
+      RADIUS: 235.8
+      DIAMETER: 471.6
+    Cordelia:
+      RADIUS: 20.1
+      DIAMETER: 40.2
+    Ophelia:
+      RADIUS: 21.4
+      DIAMETER: 42.8
+    Bianca:
+      RADIUS: 25.7
+      DIAMETER: 51.4
+    Cressida:
+      RADIUS: 39.8
+      DIAMETER: 79.6
+    Desdemona:
+      RADIUS: 32
+      DIAMETER: 64
+    Juliet:
+      RADIUS: 46.8
+      DIAMETER: 93.6
+    Portia:
+      RADIUS: 67.6
+      DIAMETER: 135.2
+    Rosalind:
+      RADIUS: 36
+      DIAMETER: 72
+    Belinda:
+      RADIUS: 40.3
+      DIAMETER: 80.6
+    Puck:
+      RADIUS: 81
+      DIAMETER: 162
+    Caliban:
+      RADIUS: 36.4
+      DIAMETER: 72.8
+    Sycorax:
+      RADIUS: 93
+      DIAMETER: 186
+    Prospero:
+      RADIUS: 25
+      DIAMETER: 50
+    Setebos:
+      RADIUS: 24
+      DIAMETER: 48
+    Stephano:
+      RADIUS: 16
+      DIAMETER: 32
+    Trinculo:
+      RADIUS: 9.5
+      DIAMETER: 19
+    Francisco:
+      RADIUS: 11
+      DIAMETER: 22
+    Margaret:
+      RADIUS: 10
+      DIAMETER: 20
+    Ferdinand:
+      RADIUS: 10
+      DIAMETER: 20
+    Perdita:
+      RADIUS: 15
+      DIAMETER: 30
+    Mab:
+      RADIUS: 12
+      DIAMETER: 24
+    Cupid:
+      RADIUS: 9
+      DIAMETER: 18
+    Triton:
+      RADIUS: 1353.4
+      DIAMETER: 2706.8
+    Nereid:
+      RADIUS: 170
+      DIAMETER: 340
+    Naiad:
+      RADIUS: 33
+      DIAMETER: 66
+    Thalassa:
+      RADIUS: 41
+      DIAMETER: 82
+    Despina:
+      RADIUS: 78
+      DIAMETER: 156
+    Galatea:
+      RADIUS: 88
+      DIAMETER: 176
+    Larissa:
+      RADIUS: 97
+      DIAMETER: 194
+    Proteus:
+      RADIUS: 210
+      DIAMETER: 420
+    Halimede:
+      RADIUS: 31
+      DIAMETER: 62
+    Psamathe:
+      RADIUS: 20
+      DIAMETER: 40
+    Sao:
+      RADIUS: 22
+      DIAMETER: 44
+    Laomedeia:
+      RADIUS: 21
+      DIAMETER: 42
+    Neso:
+      RADIUS: 30
+      DIAMETER: 60
+    Hippocamp:
+      RADIUS: 17.4
+      DIAMETER: 34.8
+    Vanth:
+      RADIUS: 221
+      DIAMETER: 442
+    Charon:
+      RADIUS: 606
+      DIAMETER: 1212
+    Nix:
+      RADIUS: 22.5
+      DIAMETER: 45
+    Hydra:
+      RADIUS: 27.5
+      DIAMETER: 55
+    Kerberos:
+      RADIUS: 7
+      DIAMETER: 14
+    Styx:
+      RADIUS: 5.5
+      DIAMETER: 11
+    Actaea:
+      RADIUS: 142
+      DIAMETER: 284
+    Hi_iaka:
+      RADIUS: 160
+      DIAMETER: 320
+    Namaka:
+      RADIUS: 85
+      DIAMETER: 170
+    Weywot:
+      RADIUS: 37
+      DIAMETER: 74
+    Ilmare:
+      RADIUS: 163
+      DIAMETER: 326
+    Xiangliu:
+      RADIUS: 150
+      DIAMETER: 300
+    Dysnomia:
+      RADIUS: 350
+      DIAMETER: 700
