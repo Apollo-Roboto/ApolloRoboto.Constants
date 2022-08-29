@@ -1,0 +1,23 @@
+﻿{%- macro write_var_or_struct(constants, depth=1) -%}
+	{% for name, value in constants.items() %}
+		{%- if value is mapping %}
+{{ "\t"*depth }}public struct {{ name }} {
+{{ "\t"*depth }}	{{ write_var_or_struct(value, depth+1) }}
+{{ "\t"*depth }}}
+		{% else %}
+{{ "\t"*depth }}public const double {{ name }} = {{ value }};
+		{%- endif %}
+
+	{%- endfor %}
+
+{%- endmacro -%}
+
+
+// THIS FILE IS AUTO GENERATED
+
+using System;
+
+namespace {{ projectName }}
+{
+{{- write_var_or_struct(constants) }}
+}

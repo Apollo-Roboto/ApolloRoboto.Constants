@@ -15,20 +15,18 @@ def load_yaml(path: Path):
 
 def save_file(data: str, path: Path):
 	path.write_text(data)
-	# with path.open("w") as f:
-	# 	f.write(data)
 
 def render_string(templatedText: str, variables: dict):
 	template = Template(templatedText)
 	renderedText = template.render(**variables)
 	return renderedText
 
-def clean():
-	if(GENERATED_PATH.exists()):
-		print(f"Deleting {GENERATED_PATH}")
-		shutil.rmtree(GENERATED_PATH)
+def clean(path: Path):
+	if(path.exists()):
+		print(f"Deleting {path}")
+		shutil.rmtree(path)
 
-def cs_render_csproj(template_path: Path, out_path: Path, variables: dict):
+def render_file(template_path: Path, out_path: Path, variables: dict):
 	template_text = template_path.read_text()
 	rendered_text = render_string(template_text, variables)
 
@@ -38,23 +36,25 @@ def cs_render_csproj(template_path: Path, out_path: Path, variables: dict):
 		os.makedirs(directory)
 	out_path.write_text(rendered_text)
 
-def cs_render_code(template_path: Path, out_path: Path, variables: dict):
-	template_text = template_path.read_text()
-	rendered_text = render_string(template_text, variables)
+def render_cs(variables: dict):
+	render_file(
+		template_path=Path(SOURCE_PATH, "cs/csproj.j2"),
+		out_path=Path(GENERATED_PATH, f"cs/{variables['projectName']}.csproj"),
+		variables=variables,
+	)
 
-	print(f"Creating {out_path}")
-	directory = os.path.dirname(out_path)
-	if(not os.path.exists(directory)):
-		os.makedirs(directory)
-	out_path.write_text(rendered_text)
+	render_file(
+		template_path=Path(SOURCE_PATH, "cs/code.j2"),
+		out_path=Path(GENERATED_PATH, f"cs/Constants.cs"),
+		variables=variables,
+	)
 
-def custom_function():
-	return "// this is a test"
+
 
 
 if(__name__ == '__main__'):
 
-	clean()
+	clean(GENERATED_PATH)
 
 	print(f"Loading constants.yaml")
 	constants = load_yaml(Path("./constants.yaml"))
@@ -64,14 +64,4 @@ if(__name__ == '__main__'):
 
 	variables = {"constants":constants, **meta}
 
-	cs_render_csproj(
-		template_path=Path(SOURCE_PATH, "cs/csproj_template.j2"),
-		out_path=Path(GENERATED_PATH, f"cs/{variables['projectName']}.csproj"),
-		variables=variables,
-	)
-
-	cs_render_code(
-		template_path=Path(SOURCE_PATH, "cs/code_template.j2"),
-		out_path=Path(GENERATED_PATH, f"cs/Constants.cs"),
-		variables=variables,
-	)
+	render_cs(variables)
