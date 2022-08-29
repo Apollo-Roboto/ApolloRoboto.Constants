@@ -1,3 +1,13 @@
 version: 0.2.0
+projectName: ApolloRoboto.Constants
+projectDisplayName: Apollo-Roboto Constants
+description: A collection of constant numbers.
+author: Apollo-Roboto
 copyright: Copyright © 2022 | Apollo-Roboto
 repositoryUrl: https://github.com/Apollo-Roboto/ApolloRoboto.Constants
+tags:
+  - Math
+  - Constants
+  - Numbers
+  - Space
+  - Planet
