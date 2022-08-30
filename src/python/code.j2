@@ -1,0 +1,5 @@
+{%- for name, value in constants.items() -%}
+	{%- if value is not mapping -%}
+{{ name }} = {{ value }} {{"\n"}}
+	{%- endif -%}
+{%- endfor -%}
