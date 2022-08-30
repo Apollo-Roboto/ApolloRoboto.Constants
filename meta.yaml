@@ -1,4 +1,4 @@
-version: 0.2.0
+version: 0.2.0-SNAPSHOT
 projectName: ApolloRoboto.Constants
 projectDisplayName: Apollo-Roboto Constants
 description: A collection of constant numbers.

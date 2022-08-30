@@ -43,7 +43,7 @@ def render_cs(variables: dict):
 	"""
 	render_file(
 		template_path=Path(SOURCE_PATH, "cs/csproj.j2"),
-		out_path=Path(GENERATED_PATH, f"cs/{variables['projectName']}.csproj"),
+		out_path=Path(GENERATED_PATH, f"cs/Constants.csproj"),
 		variables=variables,
 	)
 	render_file(
@@ -59,7 +59,7 @@ def render_python(variables: dict):
 	def write_module(variables: dict, parent=""):
 		render_file(
 			template_path=Path(SOURCE_PATH, "python/code.j2"),
-			out_path=Path(GENERATED_PATH, "python/constants", parent, "__init__.py"),
+			out_path=Path(GENERATED_PATH, "python/Constants", parent, "__init__.py"),
 			variables=variables,
 		)
 

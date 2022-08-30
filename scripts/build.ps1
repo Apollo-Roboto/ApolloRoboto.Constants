@@ -4,4 +4,4 @@ python "./scripts/generate.py"
 
 Write-Host "`n`n`nBuilding C#"
 Write-Host "--------------------`n`n`n"
-dotnet build "./generated/cs/ApolloRoboto.Constants.csproj"
+dotnet build "./generated/cs/Constants.csproj"
