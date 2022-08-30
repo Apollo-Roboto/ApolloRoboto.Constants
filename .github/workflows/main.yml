@@ -38,6 +38,7 @@ jobs:
   publishCS:
     name: Publish C#
     runs-on: ubuntu-latest
+    needs: [ generateCode ]
 
     steps:
       - uses: actions/download-artifact@v3
@@ -59,7 +60,7 @@ jobs:
       - name: Nuget Pushing
         run: |
           dotnet nuget push \
-          ./bin/Debug/Constants.*.nupkg \
+          ./bin/Debug/*.nupkg \
           --api-key ${{ secrets.NUGET_API_KEY }} \
           --source https://api.nuget.org/v3/index.json
 
