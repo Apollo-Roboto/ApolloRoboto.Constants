@@ -8,6 +8,7 @@ publishing them to multiple code repotitory.
 
 ## Currently Supported Language:
 - C# - [Nuget](https://www.nuget.org/packages/ApolloRoboto.Constants)
+- Python - [PyPI](https://pypi.org/project/arconstants/)
 
 ## C# Example Usage: 
 ```c#
@@ -21,6 +22,13 @@ public class Program
 		Console.WriteLine(PI * GOLDEN_RATIO)
 	}
 }
+```
+
+## Python example usage:
+```python
+from ARConstants.Math import *
+
+print(PI * GOLDEN_RATIO)
 ```
 
 ## Contributing

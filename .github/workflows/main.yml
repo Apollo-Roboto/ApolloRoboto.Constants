@@ -2,8 +2,7 @@ name: Generate
 
 on:
   push:
-    # branches: [ master ]
-    branches: [ generate ]
+    branches: [ master ]
     paths-ignore:
       - './README.md'
 
@@ -36,7 +35,6 @@ jobs:
           retention-days: 1
 
   publishCS:
-    if: ${{ false }}  # disable for now
     name: Publish C#
     runs-on: ubuntu-latest
     needs: [ generateCode ]
