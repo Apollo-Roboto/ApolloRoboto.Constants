@@ -37,10 +37,15 @@ def render_file(template_path: Path, out_path: Path, variables: dict):
 		os.makedirs(directory)
 	out_path.write_text(rendered_text)
 
+def include_licence_and_readme(destination_dir: Path):
+	shutil.copyfile(Path("./README.md"), destination_dir / "README.md")
+	shutil.copyfile(Path("./LICENSE"), destination_dir / "LICENSE")
+
 def render_cs(variables: dict):
 	"""
 	Expecting variable to have a "constant" key
 	"""
+
 	render_file(
 		template_path=Path(SOURCE_PATH, "cs/csproj.j2"),
 		out_path=Path(GENERATED_PATH, f"cs/Constants.csproj"),
@@ -52,6 +57,8 @@ def render_cs(variables: dict):
 		variables=variables,
 	)
 
+	include_licence_and_readme(Path(GENERATED_PATH, "cs/"))
+
 def render_python(variables: dict):
 	"""
 	Expecting variable to have a "constant" key
@@ -59,7 +66,7 @@ def render_python(variables: dict):
 	def write_module(variables: dict, parent=""):
 		render_file(
 			template_path=Path(SOURCE_PATH, "python/code.j2"),
-			out_path=Path(GENERATED_PATH, "python/Constants", parent, "__init__.py"),
+			out_path=Path(GENERATED_PATH, "python", variables["projectName"], parent, "__init__.py"),
 			variables=variables,
 		)
 
@@ -68,6 +75,16 @@ def render_python(variables: dict):
 				write_module({"constants":value, **meta}, parent=Path(parent, name))
 	
 	write_module(variables)
+
+	render_file(
+		template_path=Path(SOURCE_PATH, "python/pyproject.j2"),
+		out_path=Path(GENERATED_PATH, "python/pyproject.toml"),
+		variables=variables,
+	)
+	
+	include_licence_and_readme(Path(GENERATED_PATH, "python"))
+
+
 
 if(__name__ == '__main__'):
 

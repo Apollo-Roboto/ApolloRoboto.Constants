@@ -4,8 +4,8 @@
 		<TargetFramework>netcoreapp3.1</TargetFramework>
 		<OutputType>Library</OutputType>
 
-		<AssemblyName>{{ projectName }}</AssemblyName>
-		<PackageId>{{ projectName }}</PackageId>
+		<AssemblyName>{{ nugetName }}</AssemblyName>
+		<PackageId>{{ nugetName }}</PackageId>
 		<Version>{{ version }}</Version>
 		 
 		<PackageTitle>{{ projectDisplayName }}</PackageTitle>
@@ -16,15 +16,15 @@
 		<RepositoryUrl>{{ repositoryUrl }}</RepositoryUrl>
 		<PackageTags>{{ tags | join(";") }}</PackageTags>
 		<Copyright>{{ copyright }}</Copyright>
-		<!-- <PackageLicenseFile>LICENSE</PackageLicenseFile> -->
-		<!-- <PackageReleaseNotes>README.md</PackageReleaseNotes> -->
+		<PackageLicenseFile>LICENSE</PackageLicenseFile>
+		<PackageReleaseNotes>README.md</PackageReleaseNotes>
 		<!-- <PackageIcon>something.png</PackageIcon> -->
 
 	</PropertyGroup>
 
-	<!-- <ItemGroup> -->
-		<!-- <None Include="LICENSE" Pack="true" PackagePath="" /> -->
-		<!-- <None Include="README.md" Pack="true" PackagePath="" /> -->
-	<!-- </ItemGroup> -->
+	<ItemGroup>
+		<None Include="LICENSE" Pack="true" PackagePath="" />
+		<None Include="README.md" Pack="true" PackagePath="" />
+	</ItemGroup>
 
 </Project>

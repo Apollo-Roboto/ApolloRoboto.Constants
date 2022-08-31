@@ -1,8 +1,9 @@
-version: 0.2.0-SNAPSHOT
-projectName: ApolloRoboto.Constants
+version: 0.2.1
+projectName: ARConstants
 projectDisplayName: Apollo-Roboto Constants
 description: A collection of constant numbers.
 author: Apollo-Roboto
+authorEmail: Apollo_Roboto@outlook.com
 copyright: Copyright © 2022 | Apollo-Roboto
 repositoryUrl: https://github.com/Apollo-Roboto/ApolloRoboto.Constants
 tags:
@@ -11,3 +12,7 @@ tags:
   - Numbers
   - Space
   - Planet
+  - Generated
+
+# Alternative package name to go around different naming conventions
+nugetName: ApolloRoboto.Constants
