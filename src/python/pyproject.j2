@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "{{ projectName | lower | replace(".", "-") }}"
+version = "{{ version }}"
+authors = [
+  { name="{{ author }}", email="{{ authorEmail }}" },
+]
+description  = "{{ description }}"
+readme = "README.md"
+license = { file="LICENSE" }
+keywords = ["{{ tags | join("\", \"") }}"]
+dependencies = []
+classifiers = [
+	"Programming Language :: Python :: 3",
+	"Operating System :: OS Independent",
+]
+
+[project.urls]
+"Source" = "{{ repositoryUrl }}"

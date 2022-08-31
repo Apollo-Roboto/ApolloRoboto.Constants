@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>netcoreapp3.1</TargetFramework>
+		<OutputType>Library</OutputType>
+
+		<AssemblyName>{{ nugetName }}</AssemblyName>
+		<PackageId>{{ nugetName }}</PackageId>
+		<Version>{{ version }}</Version>
+		 
+		<PackageTitle>{{ projectDisplayName }}</PackageTitle>
+		<Title>{{ projectDisplayName }}</Title>
+		<Description>{{ description }}</Description>
+		<Authors>{{ author }}</Authors>
+		<PackageProjectUrl>{{ repositoryUrl }}</PackageProjectUrl>
+		<RepositoryUrl>{{ repositoryUrl }}</RepositoryUrl>
+		<PackageTags>{{ tags | join(";") }}</PackageTags>
+		<Copyright>{{ copyright }}</Copyright>
+		<PackageLicenseFile>LICENSE</PackageLicenseFile>
+		<PackageReleaseNotes>README.md</PackageReleaseNotes>
+		<!-- <PackageIcon>something.png</PackageIcon> -->
+
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="LICENSE" Pack="true" PackagePath="" />
+		<None Include="README.md" Pack="true" PackagePath="" />
+	</ItemGroup>
+
+</Project>
